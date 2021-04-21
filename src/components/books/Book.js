@@ -76,7 +76,7 @@ class Book extends React.Component {
                 <div className="card-body">
                 <div className="row">
                     <div className="col">
-                        <img src={book.img} alt={book.title} />
+                        <img src={book.image} alt={book.title} />
                         <br /><br />
                         {this.renderButton()}
                     </div>
