@@ -8,7 +8,16 @@ const rootReducer = combineReducers({
 export default rootReducer;
 
 
+function manageBooks(state = [], action) {
+    switch (action.type) {
+      case 'ADD_ALL_BOOKS':
 
+        return action.books
+
+      default:
+        return state;
+    }
+};
 
 function manageUser(state = {username: "", id: 0, userBooks: [], userNotes: []}, action) {
  
