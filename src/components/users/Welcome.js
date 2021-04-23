@@ -29,16 +29,13 @@ class SignIn extends React.Component {
                 <br />
             <div className="card text-center">
                 <div className="card-header">
-                    <a href="https://github.com/LeonorPDX/react-books-app">GitHub Repo</a>
+                    <a href="https://github.com/dan-dc25/book_club_vip">GitHub Repo</a>
                 </div>
                 <div className="card-body">
                     <h5 className="card-title">Enter a Username to Get Started</h5>
                     <form onSubmit={this.handleOnSubmit}>
                         <input type="text" value={this.state.username} onChange={this.handleOnChange} placeholder="Username" required />
                     </form>
-                </div>
-                <div className="card-footer text-muted">
-                    React Portfolio Project by Leonor Colbert
                 </div>
             </div>
             <br />

@@ -29,7 +29,7 @@ class NavBar extends React.Component {
               <div className="row pt-5">
                 <div className="col text-center">
                   <h1>Book Club Vip</h1>
-                  <h4>Collect your books and your thoughts.</h4>
+                  <h4>A place to explore the world through words.</h4>
                   <br />
                 </div>
               </div>
