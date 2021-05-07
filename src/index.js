@@ -9,13 +9,14 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import rootReducer from './reducers/reducer.js';
 
-const store = createStore(rootReducer, compose(
-    applyMiddleware(thunk),
+const store = createStore(rootReducer, compose( //using compose to pass multiple store enhancers to the store
+    applyMiddleware(thunk), //in this case applyMiddleware is the only store enhancer supplied with Redux
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   ));
 
+  //the Provider component here is making the Redux store available to any nested components that need access to the store
 ReactDOM.render(
-<Provider store={store}>
+<Provider store={store}> 
     <BrowserRouter>
         <App />
     </BrowserRouter>
